@@ -27,10 +27,10 @@ export async function generateMetadata({ params }: PageProps) {
       description: post.metadata.description,
       publishedTime,
       type: "article",
-      url: `https://localhost:3000/blog/${post.slug}`,
+      url: `https://jayaramakarthikeya.github.io/blog/${post.slug}`,
       images: [
         {
-          url: `https://localhost:3000/og/blog?title=${post.metadata.title}`,
+          url: `https://jayaramakarthikeya.github.io/og/blog?title=${post.metadata.title}`,
         },
       ],
     },
@@ -40,7 +40,7 @@ export async function generateMetadata({ params }: PageProps) {
       card: "summary_large_image",
       creator: "@nexxeln",
       images: [
-        `https://localhost:3000/og/blog?title=${post.metadata.title}&top=${publishedTime}`,
+        `https://jayaramakarthikeya.github.io/og/blog?title=${post.metadata.title}&top=${publishedTime}`,
       ],
     },
   }
@@ -68,10 +68,10 @@ export default async function Post({ params }: PageProps) {
             datePublished: post.metadata.date,
             dateModified: post.metadata.date,
             description: post.metadata.description,
-            image: `https://localhost:3000/og/blog?title=${
+            image: `https://jayaramakarthikeya.github.io/og/blog?title=${
               post.metadata.title
             }&top=${formatDate(post.metadata.date)}`,
-            url: `https://localhost:3000/blog/${post.slug}`,
+            url: `https://jayaramakarthikeya.github.io/blog/${post.slug}`,
             author: {
               "@type": "Person",
               name: "Karthikeya Jayarama",

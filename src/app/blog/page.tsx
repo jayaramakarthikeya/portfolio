@@ -51,7 +51,7 @@ export const metadata: Metadata = {
   openGraph: {
     images: [
       {
-        url: "https://localhost:3000/og/home?title=blog",
+        url: "https://jayaramakarthikeya.github.io/og/home?title=blog",
       },
     ],
   },
