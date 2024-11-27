@@ -20,7 +20,7 @@ export function Header() {
         </div>
       </div>
       <p className="leading-relaxed animate-fade-in-up">
-      <b>Currently I&apos;m open to network for Full Time Roles starting in June, 2025 please reach out to me through my email or linkedin.</b> I&apos;m a graduate student at the University of Pennsylvania and Robotics Software Engineer at the Autoware Foundation. My main current focus in on end to end autonomous driving with focus on perception, localization and mapping. 
+      <b>Currently I&apos;m open to network for Full Time Roles starting from June, 2025. Please reach out to me through my email or linkedin.</b> I&apos;m a graduate student at the University of Pennsylvania and Robotics Software Engineer at the Autoware Foundation. My main current focus in on end to end autonomous driving with focus on perception, localization and mapping. 
         If I&apos;m not coding, I&apos;m probably travelling, playing video games or watching comedy. 
       </p>
     </header>
