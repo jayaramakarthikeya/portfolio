@@ -40,3 +40,4 @@ yarn-error.log*
 next-env.d.ts
 jkarthik.dev@0.1.0
 next
+package-lock.json
