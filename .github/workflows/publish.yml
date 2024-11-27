@@ -30,7 +30,7 @@ jobs:
           static_site_generator: next
 
       - name: Build with Next.js
-        run: next build
+        run: npx next build
 
       - name: Debug Directory
         run: |
