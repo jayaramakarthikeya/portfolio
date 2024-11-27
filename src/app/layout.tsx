@@ -9,35 +9,35 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
 })
 
-export const metadata: Metadata = {
-  metadataBase: new URL("https://www.nexxel.dev"),
-  title: {
-    default: "Karthikeya Jayarama",
-    template: "%s |  Karthikeya Jayarama",
-  },
-  description: "Developer, cardist and maker of things.",
-  openGraph: {
-    title: "Karthikeya Jayarama",
-    description: "Developer, cardist and maker of things.",
-    url: "https://www.nexxel.dev",
-    siteName: "Karthikeya Jayarama",
-    locale: "en_US",
-    type: "website",
-    images: ["https://www.nexxel.dev/og/home"],
-  },
-  robots: {
-    index: true,
-    follow: true,
-    "max-video-preview": -1,
-    "max-image-preview": "large",
-    "max-snippet": -1,
-  },
-  twitter: {
-    title: "Karthikeya Jayarama",
-    card: "summary_large_image",
-    creator: "@nexxeln",
-  },
-}
+// export const metadata: Metadata = {
+//   metadataBase: new URL(""),
+//   title: {
+//     default: "Karthikeya Jayarama",
+//     template: "%s |  Karthikeya Jayarama",
+//   },
+//   description: "Developer, cardist and maker of things.",
+//   openGraph: {
+//     title: "Karthikeya Jayarama",
+//     description: "Developer, cardist and maker of things.",
+//     url: "",
+//     siteName: "Karthikeya Jayarama",
+//     locale: "en_US",
+//     type: "website",
+//     images: [""],
+//   },
+//   robots: {
+//     index: true,
+//     follow: true,
+//     "max-video-preview": -1,
+//     "max-image-preview": "large",
+//     "max-snippet": -1,
+//   },
+//   twitter: {
+//     title: "Karthikeya Jayarama",
+//     card: "summary_large_image",
+//     creator: "@jayaramakarthikeya",
+//   },
+// }
 
 export default function RootLayout({
   children,
