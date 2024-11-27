@@ -32,6 +32,14 @@ jobs:
       - name: Build with Next.js
         run: npx next build
 
+      - name: Debug Directory
+        run: |
+          echo "Listing files in workspace:"
+          ls -al
+          echo "Contents of ./out:"
+          ls -al ./out || echo "./out directory does not exist"
+
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
