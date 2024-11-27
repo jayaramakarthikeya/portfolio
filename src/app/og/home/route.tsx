@@ -1,6 +1,8 @@
 import { ImageResponse } from "next/og"
 
-export const runtime = "edge"
+//export const runtime = "edge"
+
+export const dynamic = 'force-static'
 
 async function loadGoogleFont(font: string, text: string) {
   const url = `https://fonts.googleapis.com/css2?family=${font}&text=${encodeURIComponent(
