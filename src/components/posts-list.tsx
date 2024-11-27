@@ -7,9 +7,7 @@ export function PostsList({ posts }: { posts: MDXFileData[] }) {
   const postsWithViews = posts.map((post) => ({
     post,
     viewsComponent: (
-      <Suspense fallback={<ViewCounterSkeleton />}>
-        <Views slug={post.slug} />
-      </Suspense>
+      <div></div>
     ),
   }))
 
