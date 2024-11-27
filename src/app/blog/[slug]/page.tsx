@@ -1,10 +1,6 @@
 import { notFound } from "next/navigation"
 import { MDX } from "./mdx"
 import { getPostBySlug } from "@/lib/blog"
-import { Views } from "@/components/view-counter"
-import { Suspense } from "react"
-import { ViewCounterSkeleton } from "@/components/view-counter"
-import { incrementViews } from "@/lib/actions"
 
 type PageProps = {
   params: Promise<{ slug: string }>
@@ -27,12 +23,12 @@ export async function generateMetadata({ params }: PageProps) {
       description: post.metadata.description,
       publishedTime,
       type: "article",
-      url: `https://localhost:3000/blog/${post.slug}`,
-      images: [
-        {
-          url: `https://localhost:3000/og/blog?title=${post.metadata.title}`,
-        },
-      ],
+      // url: `https://localhost:3000/blog/${post.slug}`,
+      // images: [
+      //   {
+      //     url: `https://localhost:3000/og/blog?title=${post.metadata.title}`,
+      //   },
+      // ],
     },
   }
 }
