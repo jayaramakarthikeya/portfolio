@@ -53,7 +53,6 @@ export default async function Post({ params }: PageProps) {
     notFound()
   }
 
-  await incrementViews(slug)
 
   return (
     <section className="animate-fade-in-up">
@@ -87,11 +86,6 @@ export default async function Post({ params }: PageProps) {
 
       <div className="mb-8 flex items-center justify-between text-sm text-gray-400">
         <span>{formatDate(post.metadata.date)}</span>
-        <div className="flex items-center gap-4">
-          <Suspense fallback={<ViewCounterSkeleton />}>
-            <Views slug={slug} />
-          </Suspense>
-        </div>
       </div>
 
       <article className="prose prose-invert max-w-none prose-headings:text-white prose-a:text-white hover:prose-a:underline">
