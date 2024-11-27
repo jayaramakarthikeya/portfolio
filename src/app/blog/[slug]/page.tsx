@@ -34,15 +34,6 @@ export async function generateMetadata({ params }: PageProps) {
         },
       ],
     },
-    twitter: {
-      title: post.metadata.title,
-      description: post.metadata.description,
-      card: "summary_large_image",
-      creator: "@nexxeln",
-      images: [
-        `https://localhost:3000/og/blog?title=${post.metadata.title}&top=${publishedTime}`,
-      ],
-    },
   }
 }
 
@@ -56,7 +47,7 @@ export default async function Post({ params }: PageProps) {
 
   return (
     <section className="animate-fade-in-up">
-      <script
+      {/* <script
         type="application/ld+json"
         suppressHydrationWarning
         dangerouslySetInnerHTML={{
@@ -77,7 +68,7 @@ export default async function Post({ params }: PageProps) {
             },
           }),
         }}
-      />
+      /> */}
 
       <h1 className="text-4xl font-bold mb-4 text-white">
         <span className="text-accent mr-2">*</span>
