@@ -11,7 +11,6 @@ const nextConfig: NextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  basePath: "/",
   output: "export",
   reactStrictMode: true,
 }
