@@ -1,7 +1,6 @@
 import { notFound } from "next/navigation"
-import { MDX } from "./mdx"
+import { MDX } from "@/app/blog/[slug]/mdx"
 import { getPostBySlug } from "@/lib/blog"
-
 type PageProps = {
   params: Promise<{ slug: string }>
 }
