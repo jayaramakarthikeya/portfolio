@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import { Geist_Mono } from "next/font/google"
 import "./globals.css"
 import { Navbar } from "../components/navbar"
-import GoogleAnalytics from '@/components/google-analytics';
+import Analytics from '@/components/google-analytics';
 
 
 const geistMono = Geist_Mono({
@@ -48,7 +48,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <GoogleAnalytics />
+      <Analytics />
       <body
         className={`${geistMono.variable} antialiased min-h-screen font-mono`}
       >

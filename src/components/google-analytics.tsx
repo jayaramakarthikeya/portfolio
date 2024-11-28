@@ -1,26 +1,14 @@
 import React from 'react';
-import Script from 'next/script';
+import { useEffect } from 'react';
+import ReactGA from 'react-ga';
 
-const GoogleAnalytics = () => {
-  return (
-    <>
-      <Script
-        strategy='lazyOnload'
-        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_MEASUREMENT_ID}`}
-      />
+const Analytics = () => {
+  useEffect(() => {
+    ReactGA.initialize(`${process.env.NEXT_PUBLIC_MEASUREMENT_ID}`);
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
 
-      <Script id='' strategy='lazyOnload'>
-        {`
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', '${process.env.NEXT_PUBLIC_MEASUREMENT_ID}', {
-              page_path: window.location.pathname,
-              });
-          `}
-      </Script>
-    </>
-  );
+  return null;
 };
 
-export default GoogleAnalytics;
+export default Analytics;

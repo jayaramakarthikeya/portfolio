@@ -42,3 +42,4 @@ jkarthik.dev@0.1.0
 next
 package-lock.json
 .vscode
+.env.local
